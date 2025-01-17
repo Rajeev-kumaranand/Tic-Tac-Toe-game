@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="top">
+            <div class="o points">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4rqwFFwhPv8OOtoPrehOpPAA4Om6S32QSJ5LLcQPQVKZuACu5TyzEgwYXgrLVjEZzOQ&usqp=CAU"
+                    alt="">
+                <div id="score-o">0 WINS</div>
+            </div>
+            <div class="x points">
+                <span id="span-x">X</span>
+                <div id="score-x">0 WINS</div>
+            </div>
+            <div class="draws points"><img src="https://cdn-icons-png.flaticon.com/512/10217/10217527.png" alt="">
+                <div id="draws">0 Draws</div>
+            </div>
+        </div>
+        <div class="main">
+            <div id="grid">
+                <div class="raw">
+                    <div onclick="handleclick(this)" id="0" class="column"></div>
+                    <div onclick="handleclick(this)" id="1" class="column"></div>
+                    <div onclick="handleclick(this)" id="2" class="column"></div>
+                </div>
+                <div class="raw">
+                    <div onclick="handleclick(this)" id="3" class="column"></div>
+                    <div onclick="handleclick(this)" id="4" class="column"></div>
+                    <div onclick="handleclick(this)" id="5" class="column"></div>
+                </div>
+                <div class="raw">
+                    <div onclick="handleclick(this)" id="6" class="column"></div>
+                    <div onclick="handleclick(this)" id="7" class="column"></div>
+                    <div onclick="handleclick(this)" id="8" class="column"></div>
+                </div>
+            </div>
+            <div id="status"></div>
+            <div id="turn-id" class="turn">
+                <div class="turns-box turn-x " id="turn-x">X</div>
+                <div class="turns-box" id="turn-o">O</div>
+            </div>
+        </div>
+
+        <button id="btn">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
